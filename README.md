@@ -1,4 +1,6 @@
 # track_your_changes
 
-This program helps you to compare two files by line and prints the differing number of characters by length.
+monitor.rb allows you to input two file names and tracks the difference of line lengths.
+
+monitor_dir.rb tracks the same but for all the files in the directory for the format that you specify.
 
