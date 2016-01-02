@@ -27,6 +27,10 @@ def monitor(a,b)
 
 end
 
-file1 = File.read("Test1.txt")
-file2 = File.read("Test2.txt")
+print "Enter the name of 1st file:\n"
+filename1=gets.chomp
+file1 = File.read(filename1)
+print "Enter the name of 2nd file:\n"
+filename2=gets.chomp
+file2 = File.read(filename2)
 monitor(file1,file2)
