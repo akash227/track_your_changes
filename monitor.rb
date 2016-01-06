@@ -1,7 +1,9 @@
 def compare(f1,f2)
 	i = 0
+    ff = File.open("result.txt","a")
 	while i < f2.length
 		print "line #{i+1} differs by #{(f2[i].length-f1[i].length).abs} characters\n"
+        ff << "line #{i+1} differs by #{(f2[i].length-f1[i].length).abs} characters\n"
 		i=i+1
 
 	end
@@ -13,6 +15,7 @@ def compare(f1,f2)
 			i = i + 1
 		end
 		print "and the file has #{count} more characters."
+        ff << "and the file has #{count} more characters."
 	end
 end
 def monitor(a,b)
