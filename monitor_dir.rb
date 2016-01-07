@@ -1,7 +1,9 @@
 def compare(f1,f2)
 	i = 0
+	ff = File.open("result1.md","a")
 	while i < f2.length
 		puts "line #{i+1} differs by #{(f2[i].length-f1[i].length).abs} characters"
+		ff << "line #{i+1} differs by #{(f2[i].length-f1[i].length).abs} characters\n"
 		i=i+1
 
 	end
